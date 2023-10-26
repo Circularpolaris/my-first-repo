@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  font-family: 'Cabin', sans-serif;
+  font-stretch: ultra-expanded;
+  padding: 0px;
+}
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  background-color: #5bb3ce;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+nav ul {
+  list-style: none;
+  text-align: center; 
+}
+nav li {
+  display: inline-block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+section {
+  display: flex;
+}
+article {
+  flex: 1;
+}
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+}
+.promotion {
+  background-image: url('promotion.jpg');
+  background-size: 100%;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding: 6rem 6rem 4rem 6rem;
+  font-size: 2rem;
+  color: white;
+}
+.button {
+  background-color: #4c98af;
+  border: none;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: medium;
+  margin: auto;
+  cursor: pointer;
+}
+.animation {
+  animation: disappear 4s 2s both infinite;
+}
+@keyframes disappear {
+  50% {
+    text-shadow: 0 0 5rem white;
+  }
+  to {
+    text-shadow: 0 0 2rem white;
+    opacity: 0;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.card {
+  padding: 2rem;
+  justify-content: baseline;
+  
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.card:hover {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);  
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  flex: 1;
+}
